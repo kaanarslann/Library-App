@@ -1,11 +1,22 @@
-import './App.css'
-import Welcome from './pages/Welcome'
+import Panel from "./components/Panel"
+import { BookContextProvider } from "./context/BookContext"
+import PageContent from "./layout/PageContent"
+import "./App.css"
 
 function App() {
 
   return (
     <>
-      <Welcome />
+      <BookContextProvider>
+        <div className="flex flex-col md:flex-row">
+          <section className="md:w-[20%]">
+            <Panel />
+          </section>
+          <section>
+            <PageContent />
+          </section>
+        </div>
+      </BookContextProvider>
     </>
   )
 }
