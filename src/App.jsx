@@ -12,7 +12,7 @@ function App() {
           <section className="md:w-[20%]">
             <Panel />
           </section>
-          <section>
+          <section className="md:w-[80%]">
             <PageContent />
           </section>
         </div>

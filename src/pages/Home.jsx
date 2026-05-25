@@ -1,10 +1,12 @@
 import { BookContext } from "../context/BookContext"
 import { useContext } from "react"
+import { useNavigate } from "react-router"
 
 export default function Home() {
     
-    const {books, deleteBook} = useContext(BookContext);
-
+    const {books} = useContext(BookContext);
+    
+    const navigate = useNavigate();
     
     return (
         <>
@@ -14,23 +16,18 @@ export default function Home() {
                         <tr className="text-lg font-semibold">
                             <th className="px-4 py-2 text-left">Title</th>
                             <th className="px-4 py-2 text-left">Author</th>
-                            <th className="px-4 py-2 text-left">Year</th>
+                            <th className="px-4 py-2 text-left">Condition</th>
                             <th className="px-4 py-2 text-left">Status</th>
-                            <th className="px-4 py-2 text-center">Manage</th>
                         </tr>
                     </thead>
                     <tbody>
                         {books.map((book) => (
-                            <tr key={book.id} className="border-t hover:bg-gray-50">
+                            <tr key={book.id} className="border-t hover:bg-gray-50 hover:cursor-pointer" onClick={() => navigate(`/books/${book.id}`)}>
                                 <td className="px-4 py-2">{book.title}</td>
                                 <td className="px-4 py-2">{book.author}</td>
-                                <td className="px-4 py-2">{book.year}</td>
+                                <td className="px-4 py-2">{book.condition}</td>
                                 <td className={`px-4 py-2 ${book.available ? "text-green-500" : "text-red-500"}`}>
                                     {book.available ? "Available" : "Lent"}
-                                </td>
-                                <td className="px-4 py-2 flex flex-col md:flex-row gap-2">
-                                    <button className="hover:text-blue-500 hover:cursor-pointer">Update</button>
-                                    <button className="hover:text-red-500 hover:cursor-pointer" onClick={() => deleteBook(book.id)}>Delete</button>
                                 </td>
                             </tr>
                         ))}

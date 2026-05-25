@@ -4,6 +4,7 @@ export const initialBooks = [
         title: "Clean Code",
         author: "Robert C. Martin",
         year: 2008,
+        condition: "Good",
         available: true,
     },
     {
@@ -11,6 +12,7 @@ export const initialBooks = [
         title: "Design Patterns",
         author: "Erich Gamma",
         year: 1994,
+        condition: "Bad",
         available: true,
     },
     {
@@ -18,6 +20,7 @@ export const initialBooks = [
         title: "Refactoring",
         author: "Martin Fowler",
         year: 1999,
+        condition: "Excellent",
         available: false,
     },
     {
@@ -25,6 +28,7 @@ export const initialBooks = [
         title: "Metro 2033",
         author: "Dmitry Glukhovsky",
         year: 2002,
+        condition: "Good",
         available: true,
     },
     {
@@ -32,6 +36,7 @@ export const initialBooks = [
         title: "The Hobbit",
         author: "J. R. R. Tolkien",
         year: 1997,
+        condition: "Good",
         available: false,
     },
     {
@@ -39,6 +44,7 @@ export const initialBooks = [
         title: "A Tale of Two Cities",
         author: "Charles Dickens",
         year: 1859,
+        condition: "Bad",
         available: true,
     },
     {
@@ -46,6 +52,7 @@ export const initialBooks = [
         title: "Dune",
         author: "Frank Herbert",
         year: 1965,
+        condition: "Excellent",
         available: false,
     },
     {
@@ -53,6 +60,7 @@ export const initialBooks = [
         title: "Matilda",
         author: "Roald Dahl",
         year: 1988,
+        condition: "Good",
         available: true,
     },
     {
@@ -60,6 +68,7 @@ export const initialBooks = [
         title: "The Secret",
         author: "Rohanda Byrne",
         year: 2006,
+        condition: "Excellent",
         available: true,
     },
     {
@@ -67,6 +76,7 @@ export const initialBooks = [
         title: "The Hunger Games",
         author: "Suzanne Collins",
         year: 2008,
+        condition: "Good",
         available: false,
     },
 ];
