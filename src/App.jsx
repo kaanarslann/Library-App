@@ -1,6 +1,7 @@
 import Panel from "./components/Panel"
 import { BookContextProvider } from "./context/BookContext"
 import PageContent from "./layout/PageContent"
+import { ToastContainer } from "react-toastify"
 import "./App.css"
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
             <PageContent />
           </section>
         </div>
+        <ToastContainer />
       </BookContextProvider>
     </>
   )

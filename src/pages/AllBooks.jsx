@@ -2,7 +2,7 @@ import { BookContext } from "../context/BookContext"
 import { useContext } from "react"
 import { useNavigate } from "react-router"
 
-export default function Home() {
+export default function AllBooks() {
     
     const {books} = useContext(BookContext);
     

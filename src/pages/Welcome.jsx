@@ -5,7 +5,7 @@ export default function Welcome() {
     const navigate = useNavigate();
 
     const welcomeButton = () => {
-        navigate("/home");
+        navigate("/books");
     };
     
     return (

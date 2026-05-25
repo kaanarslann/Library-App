@@ -2,6 +2,7 @@ import { useParams } from "react-router"
 import { useContext } from "react"
 import { BookContext } from "../context/BookContext"
 import { useNavigate } from "react-router"
+import { toast } from "react-toastify"
 
 export default function BookDetail() {
     
@@ -13,7 +14,8 @@ export default function BookDetail() {
 
     const deleteButton = (id) => {
         deleteBook(id);
-        navigate("/home");
+        toast.success("Book deleted successfully!");
+        navigate("/books");
     }
 
     if(!book) {

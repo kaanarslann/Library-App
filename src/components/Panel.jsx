@@ -9,7 +9,7 @@ export default function Panel() {
     };
 
     const listButton = () => {
-        navigate("/home");
+        navigate("/books");
     };
 
     return (
