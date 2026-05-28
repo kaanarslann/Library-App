@@ -14,7 +14,7 @@ export const BookContextProvider = ({children}) => {
     };
 
     const updateBook = (updatedBook) => {
-        setBooks((prev) => prev.map((book) => book.id === updateBook.id ? updateBook : book));
+        setBooks((prev) => prev.map((book) => book.id === updatedBook.id ? updatedBook : book));
     };
 
     const deleteBook = (id) => {
