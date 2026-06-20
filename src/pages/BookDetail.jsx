@@ -3,6 +3,7 @@ import { useContext } from "react"
 import { BookContext } from "../context/BookContext"
 import { useNavigate } from "react-router"
 import { toast } from "react-toastify"
+import Button from "../components/Button"
 
 export default function BookDetail() {
     
@@ -43,10 +44,8 @@ export default function BookDetail() {
                         </h2>
                     </div>
                     <div className="flex gap-3 justify-end pt-5">
-                        <button className="border bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 
-                        rounded-lg hover:cursor-pointer" onClick={() => navigate(`/books/${book.id}/update`)}>Update</button>
-                        <button className="border bg-red-500 hover:bg-red-600 text-white px-4 py-2 
-                        rounded-lg hover:cursor-pointer" onClick={() => deleteButton(book.id)}>Delete</button>
+                        <Button color="save" func={() => navigate(`/books/${book.id}/update`)}>Update</Button>
+                        <Button color="delete" func={() => deleteButton(book.id)}>Delete</Button>
                     </div>
                 </section>
             </section>

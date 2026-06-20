@@ -1,5 +1,6 @@
 import { useForm } from "react-hook-form"
 import { useEffect } from "react";
+import Button from "./Button";
 
 export default function BookForm({defaultValues, onSubmit}) {
     
@@ -103,7 +104,7 @@ export default function BookForm({defaultValues, onSubmit}) {
                         </div>
                     </div>
                     <div className="flex justify-end">
-                        <button className="bg-blue-500 text-white border rounded-lg px-4 py-2">Save</button>
+                        <Button color="save">Save</Button>
                     </div>
                 </form>   
             </section>
