@@ -1,3 +1,14 @@
+# Library Application
+
+A simple React application for managing a library.
+Users can list books, add new ones, update existing books, and delete them.
+
+## Tech Stack
+- **React** (with functional components)
+- **Tailwind CSS** for styling
+- **React-Toastify** for notifications
+- **React Hook Forms** for new / update book entry form validation
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
